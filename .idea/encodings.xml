@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/hello.sc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/structure_list.scala" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/sum.scala" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sum.sc" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
