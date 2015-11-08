@@ -12,18 +12,16 @@ object PromiseObj {
     Future {
       Thread.sleep(3000)
       List("OK", "OK", "OK")
-      // TODO : почему здесь ошибка?
     } onSuccess {
-      list => promise.trySuccess(list)
+      case list => promise.trySuccess(list)
     }
 
     // promise - у этого объекта есть Future, т.е. ссылка по которой можно подписаться и выполнить тогда, когда
     // promise перейдет в то или иное состояние (либо success, либо failure)
     val reference = promise.future
 
-    // TODO : и здесь тоже
     reference.onSuccess{
-      list => println(list)
+      case list => println(list)
     }
   }
 
