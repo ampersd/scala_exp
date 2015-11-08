@@ -15,7 +15,8 @@ case class User(login: String, permissions: PermissionsList)
 object ImplicitObj {
   def main(args: Array[String]) {
     /* somewhere in a galaxy far far away  */
-    val user = User(login = "Vasiliy", permissions = "UL;AL") // только ловкость рук и ничего более
+    // фактически, передаем строку в permissions, НО она автоматически преобразуется в Set (благодаря нашим манипуляциям выше)
+    val user = User(login = "Vasiliy", permissions = "UL;AL")
     println(user)
   }
 }
